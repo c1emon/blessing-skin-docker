@@ -38,4 +38,3 @@ jobs:
           push: false # Set to true to push the image to the registry
           tags: |
             clemon/blessing-skin-server:latest
-            clemon/blessing-skin-server:${{ github.sha }} # Example for tagging with commit SHA
