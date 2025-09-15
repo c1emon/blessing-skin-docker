@@ -34,7 +34,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v6
         with:
-          context: /blessing-skin-server # Path to the build context (where your Dockerfile is)
+          context: blessing-skin-server # Path to the build context (where your Dockerfile is)
           push: false # Set to true to push the image to the registry
           tags: |
             clemon/blessing-skin-server:latest
