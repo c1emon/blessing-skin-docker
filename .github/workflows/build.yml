@@ -4,10 +4,12 @@ name: build
 
 # Controls when the workflow will run
 on:
-  workflow_call:
+  workflow_dispatch:
     inputs:
       tag:
+        description: 'The tag of Blessing Skin Server to build (e.g. 6.0.2)' # A description of the input
         required: true
+        default: '6.0.2'
         type: string
 
 jobs:
