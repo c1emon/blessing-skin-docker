@@ -14,12 +14,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
+      - uses: actions/checkout@v5
         name: Checkout Blessing Skin Server Repository
         with:
           repository: bs-community/blessing-skin-server
-          path: /blessing-skin-server
+          path: blessing-skin-server
           ref: dev
 
       # - name: Log in to Docker Hub
