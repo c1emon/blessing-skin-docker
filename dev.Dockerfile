@@ -1,4 +1,4 @@
-FROM blessing-skin-server:no-imagemagick
+FROM clemon7/blessing-skin-server:dev-no-imagemagick
 
 RUN apt update && apt install -y curl wget unzip autoconf pkg-config build-essential libpng-dev && rm -rf /var/lib/apt/lists/*
 WORKDIR /build
