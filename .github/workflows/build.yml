@@ -39,13 +39,13 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: blessing-skin-server # Path to the build context (where your Dockerfile is)
-          push: false # Set to true to push the image to the registry
-          tags: blessing-skin-server:no-imagemagick
-          load: true
+          push: true # Set to true to push the image to the registry
+          tags: blessing-skin-server:${{ inputs.tag }}-no-imagemagick
       - name: Build and push Docker image
         uses: docker/build-push-action@v6
         with:
           file: dev.Dockerfile
           push: true # Set to true to push the image to the registry
           tags: |
-            clemon7/blessing-skin-server:dev
+            clemon7/blessing-skin-server:${{ inputs.tag }}
+            clemon7/blessing-skin-server:latest
