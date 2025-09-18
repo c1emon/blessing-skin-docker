@@ -1,6 +1,6 @@
 services:
   blessing:
-    image: blessing-skin-server:full
+    image: clemon7/blessing-skin-server:dev
     restart: always
     ports:
       - 15080:80
