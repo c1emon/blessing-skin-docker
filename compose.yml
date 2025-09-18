@@ -1,0 +1,6 @@
+services:
+  blessing:
+    image: blessing-skin-server:full
+    restart: always
+    ports:
+      - 15080:80
